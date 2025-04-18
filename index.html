@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <form id="bmiForm">
+            <div class="input-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" placeholder="e.g. 170" required />
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" id="weight" placeholder="e.g. 70" required />
+            </div>
+            <div class="btn-group">
+                <button type="submit">Calculate</button>
+                <button type="reset" id="resetBtn">Reset</button>
+            </div>
+            </form>
+            <div id="results"></div>
+        </div>
+    
+        <div class="container">
+            <section class="info-section">
+            <h2>What is BMI?</h2>
+            <p>
+                <strong>BMI</strong> (Body Mass Index) is a simple calculation using a person's height and weight. 
+                It is used to classify underweight, healthy weight, overweight, and obesity in adults.
+            </p>
+    
+            <h3>How is BMI Calculated?</h3>
+            <p>
+                The formula is:<br />
+                <strong>BMI = weight (kg) / (height (m))²</strong><br />
+                For example, a person who weighs 70 kg and is 170 cm tall has a BMI of:<br />
+                BMI = 70 / (1.7 × 1.7) = 24.22
+            </p>
+    
+            <h3>BMI Categories:</h3>
+            <ul>
+                <li><span style="color: #f1c40f;">Underweight</span>: BMI less than 18.5</li>
+                <li><span style="color: #2ecc71;">Normal weight</span>: BMI between 18.5 – 24.9</li>
+                <li><span style="color: #e67e22;">Overweight</span>: BMI between 25 – 29.9</li>
+                <li><span style="color: #e74c3c;">Obese</span>: BMI 30 or more</li>
+            </ul>
+    
+            <p>
+                <em>Note: BMI is a general guideline and doesn't consider muscle mass, bone density, or overall health.</em>
+            </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
