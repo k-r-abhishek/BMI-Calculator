@@ -2,8 +2,6 @@
 
 A simple, stylish Body Mass Index (BMI) calculator built with **HTML**, **CSS**, and **JavaScript**. It calculates your BMI based on your height and weight, shows the result with animated feedback, and categorizes your BMI with clear visual indicators.
 
-![BMI Demo Screenshot](https://via.placeholder.com/800x400?text=BMI+Calculator+Preview) <!-- Replace with actual screenshot or GIF if available -->
-
 ---
 
 ## 🚀 Live Demo
