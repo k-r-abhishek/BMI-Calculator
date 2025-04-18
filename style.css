@@ -1,0 +1,223 @@
+/* ========== Global Reset & Base Setup ========== */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  /* ========== Main Container ========== */
+  .container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  /* ========== Input Fields ========== */
+  .input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* ========== Buttons ========== */
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  button {
+    flex: 1;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* ========== Results Section ========== */
+  #results {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    min-height: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  #results.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  span.result {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  span.error {
+    color: red;
+    font-weight: 500;
+  }
+  
+  span.category {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+  }
+  
+  /* ========== Loading Spinner ========== */
+  .spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 1rem auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* ========== Info Section ========== */
+  .info-section {
+    background-color: #fafafa;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border-left: 5px solid #007bff;
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  .info-section h2,
+  .info-section h3 {
+    color: #007bff;
+    margin-top: 1rem;
+  }
+  
+  .info-section ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .info-section li {
+    margin-bottom: 0.5rem;
+  }
+
+  .main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* On wider screens, show side by side */
+@media (min-width: 768px) {
+  .main-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .container {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Main wrapper */
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container style */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Make sure on mobile & desktop both are stacked vertically */
+@media (min-width: 768px) {
+  .main-wrapper {
+    flex-direction: column; /* Keep it vertically stacked */
+    align-items: center; /* Align content to center */
+  }
+
+  .container {
+    max-width: 90%; /* Allows containers to adjust width on bigger screens */
+  }
+}
+
