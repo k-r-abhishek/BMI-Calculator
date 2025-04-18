@@ -8,7 +8,7 @@ A simple, stylish Body Mass Index (BMI) calculator built with **HTML**, **CSS**,
 
 ## 🚀 Live Demo
 
-🌐 [Check it out live](https://your-live-demo-link.com) <!-- Replace with your actual deployment link -->
+🌐 [Check it out live](https://k-r-abhishek.github.io/BMI-Calculator/) <!-- Replace with your actual deployment link -->
 
 ---
 
@@ -59,4 +59,4 @@ Example:
 1. **Clone this repository**
 
    ```bash
-   git clone https://github.com/your-username/bmi-calculator.git
+   git clone https://github.com/k-r-abhishek/bmi-calculator.git
